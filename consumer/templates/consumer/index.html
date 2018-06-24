@@ -15,42 +15,49 @@
 </head>
 
 <!--Nav div-->
-<nav class="navbar p-0   m-0 sticky-top navbar-expand-sm  navbar-light" style="background-color: #365899;">
-	<div style="background-color: blue;height:44px;width: 20px " class="p-0 m-0">
-		<a class="navbar-brand" href="#" >
-  	<img href="{% static 'https://getbootstrap.com/assets/brand/bootstrap-solid.svg' %} "></a> 
-   </div>
-   <!--
-   <span class="collapse navbar-text p-0 m-0">
-        Happy Shopping customer name
-    </span>
+<nav id="nav" class="navbar p-0   navbar-expand-lg m-0 sticky-top " b style="background-color: #365899;height: 45px;">
+	<div class="container">
+      <div class="navbar-brand m-0" style="" ><a href="#"><div class="logo"></div></a>
+      </div>
+      <button class="navbar-toggler" data-toggle="collapse">
+      	<span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!--search item in this shop
-   <form class="align-items-center form-inline  p-0 m-0">
-   <input type="search" class="form-control ds-input" id="search-input" placeholder="Search items on this shop..." autocomplete="off" data-siteurl=""  role="combobox" style="">
- </form>
-   <!--left of nav-bar
-    <ul class="navbar-nav p-0 m-0 ml-auto" >
-      <li class="nav-item py-0">
+   <!-- search item in this shop-->
+   <form class="p-0 m-0">
+    <input class="search"  type="search" placeholder="Search items in this shop...">
+    <div class="search-icon nav-link ">
+        <img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Search-icon.png" ></img>
+        </div> 
+
+  </form>
+
+
+   <!--left of nav-bar-->
+   <div class=" p-0 m-0">
+    <ul class="navbar-nav" >
+      <li class="nav-item">
         <a class="nav-link" href="#">Register</a>
       </li>
-      <li class="nav-item py-0">
+      <li class="nav-item ">
         <a class="nav-link" href="#">Login</a>
       </li>
-      <li class="nav-item py-0">
+      <li class="nav-item">
         <a class="nav-link" href="#">Logout</a>
       </li>
     </ul>
--->
+    </div>
+    </div>
+
 
 </nav>
 
 <body class="wall">
     
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
     	<div class="wall row no-gutters">
     		<!--left-seller space-->
-    		<div class="col-lg-3 position-relative d-none d-sm-block" >
+    		<div class="col-md-3 position-relative d-none d-sm-block " >
     	<div style="position: fixed;">
     				<!--upper seller space -->
     <span class="text-center"><h4>Seller Register </h4></span>
@@ -93,7 +100,7 @@
 
 
     		<!--Center block -->
-    		<div class="col-lg-4 d-block center clearfix wall" >
+    		<div class="col-md-4  d-block center clearfix wall " >
               
 
     	<!--Scrollable shop items-->
@@ -232,7 +239,7 @@
 
     <!--Right customer space-->
 
-    <div class="col-lg-5   position-relative d-none d-sm-block wall" >    	
+    <div class="col-md-5   position-relative d-none d-sm-block wall" >    	
      <div  style="position:fixed;">
      	<div style="background-color: #ffffff">
     	<div class="card-group">
