@@ -7,6 +7,7 @@
 	<meta charset="utf-8">
 	<link href="{% static 'consumer/css/css/bootstrap.min.css' %}" rel="stylesheet" >
 	<link href="{% static 'consumer/css/consumer_style.css' %}" rel="stylesheet" >
+	<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
 	 <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,26 +16,18 @@
 </head>
 
 <!--Nav div-->
-<nav id="nav" class="navbar p-0   navbar-expand-lg m-0 sticky-top " b style="background-color: #365899;height: 45px;">
+<nav id="nav" class="navbar p-0   navbar-expand-lg m-0 fixed-top " style="background-color: #365899;height: 48px;">
 	<div class="container">
-      <div class="navbar-brand m-0" style="" ><a href="#"><div class="logo"></div></a>
-      </div>
-      <button class="navbar-toggler" data-toggle="collapse">
-      	<span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-none d-lg-block navbar-brand m-0 logo">	
+      	</div>
 
    <!-- search item in this shop-->
-   <form class="p-0 m-0">
-    <input class="search"  type="search" placeholder="Search items in this shop...">
-    <div class="search-icon nav-link ">
-        <img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Search-icon.png" ></img>
-        </div> 
-
-  </form>
-
-
+     <form class="form-inline searchF" style="margin-top:30px; ">
+        <input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0 p-0 m-0" type="submit" style="height: 25px;font-size: 14px;text-align: center;">Search</button>
+  </form> 
    <!--left of nav-bar-->
-   <div class=" p-0 m-0">
+   <div class="collapse navbar-collapse justify-content-end" id="main-navbar" style="width: 250px;height: 50px;">
     <ul class="navbar-nav" >
       <li class="nav-item">
         <a class="nav-link" href="#">Register</a>
@@ -49,58 +42,44 @@
     </div>
     </div>
 
-
 </nav>
 
-<body class="wall">
+<body class="" style="padding-top:50px">
     
-    <div class="container-fluid p-0 m-0">
-    	<div class="wall row no-gutters">
+    <div class="p-0 m-0">
+    	<div class="wall row  no-gutters">
     		<!--left-seller space-->
-    		<div class="col-md-3 position-relative d-none d-sm-block " >
-    	<div style="position: fixed;">
+    		<div class="col-md-3  position-relative   d-none d-lg-block">
+    	<div id="sellerS" style="margin-right: 10px;margin-top:50px "  >
     				<!--upper seller space -->
-    <span class="text-center"><h4>Seller Register </h4></span>
-      <div >
-  <ul class="text-center" style="list-style-type: none; ">
-  	<div class="sellers">
-  		<a href='#'>
-    <li><h6>RETAILER</h6>
-    <small>SELL ITEMS TO CONSUMERS</small></li>
+    				<div class="position-fixed" style="margin-right: -50px">
+    <div class="text-center" style="list-style-type: none;margin-left: 40px; ">
+    	<span class="card" ><h6>BECOME A SELLER </h6></span>
+  		<a  class=" card" href='#' style="margin-bottom: 7px">
+    <h6>RETAILER</h6>
+    <small>SELL TO CONSUMERS</small>
    </a>
-    </div>
-    <br>
-    <div class="sellers">
-    <a href='#'>
-    <li><h6>WHOLESALER</h6>
-    <small>SELL ITEMS TO RETAILERS</small></li></a>
-    </div>
-    <br>
-    <div class="sellers">
-     <a href='#'>
-    <li><h6>DISTRIBUTER</h6>
-    <small>SELL ITEMS TO WHOLESALERS</small></li></a>
-    </div>
-    <br>
-    <div class="sellers">
-    <a href='#'>
-    <li><h6>MANUFACTURER</h6>
-    <small>SELL ITEMS TO DISTRIBUTERS</small></li></a>
-    </div>
-    <br>
-    <div class="sellers">
-    <a href='#'>
-    <li><h6>PRODUCER</h6>
-    <small>SELL ITEMS TO MANUFACTURER</small></li></a>
-    </div>
-  </ul>
-    </div>
+    <a class="card" style="margin-bottom: 7px" href='#'>
+    <h6>WHOLESALER</h6>
+    <small>SELL TO RETAILERS</small></a>
+     <a class="card" style="margin-bottom: 7px" href='#' >
+    <h6>DISTRIBUTER</h6>
+    <small>SELL TO WHOLESALERS</small></a>
+    <a class="Card"  style="margin-bottom: 7px" href='#'>
+    <h6>MANUFACTURER</h6>
+    <small>SELL TO DISTRIBUTERS</small></a>
+    <a class="Card" href='#'>
+    <h6 >PRODUCER</h6>
+    <small>SELL TO MANUFACTURER</small></a>
+  </div>
+    
+     	</div>
      	</div>
     	</div>
 
 
     		<!--Center block -->
-    		<div class="col-md-4  d-block center clearfix wall " >
+    		<div class="col-md-4 container d-block center clearfix wall " style="padding-top:3px">
               
 
     	<!--Scrollable shop items-->
@@ -124,11 +103,11 @@
     </div>
         <!--right Buy sell sbuttons-->
         <div class="col">
-        <div class="">
-        <ul>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
+        <div class="" >
+        <ul style="list-style-type: none;">
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
         </ul>
         </div>
     </div>
@@ -138,7 +117,7 @@
        <br>
 
   <!--shop item-->
-      <div id="shop-item" style="background-color: #fafafa">
+      <div class="" id="shop-item" style="background-color: #fafafa">
       	<!--upper image,shopname and location-->
         <div>
           <h6><img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
@@ -155,11 +134,11 @@
     </div>
         <!--right Buy sell sbuttons-->
         <div class="col">
-        <div class="">
-        <ul>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
+        <div class=" " >
+        <ul style="list-style-type: none;">
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
         </ul>
         </div>
     </div>
@@ -186,11 +165,11 @@
     </div>
         <!--right Buy sell sbuttons-->
         <div class="col">
-        <div class="">
-        <ul>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
+        <div class="" >
+        <ul style="list-style-type: none;">
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
         </ul>
         </div>
     </div>
@@ -216,11 +195,11 @@
     </div>
         <!--right Buy sell sbuttons-->
         <div class="col">
-        <div class="">
-        <ul>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
-        	<li><button>hello</button></li>
+        <div>
+        <ul style="list-style-type: none;">
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
+        	<li><button type="button"  class="btn btn-success btn-sm btn-block">hello</button></li>
         </ul>
         </div>
     </div>
@@ -239,18 +218,16 @@
 
     <!--Right customer space-->
 
-    <div class="col-md-5   position-relative d-none d-sm-block wall" >    	
-     <div  style="position:fixed;">
+    <div class="col-md-5 container-fluid  position-relative d-none d-sm-block wall" >    	
+     <div  class="position-fixed" style="margin-left:5px;margin-top:2px ">
      	<div style="background-color: #ffffff">
     	<div class="card-group">
     	<!--profile pic-->    	 
-    	<div>
-    		<div class="card">
+    		<div class="text-center" style="width: 50px">
            <img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
-" class="img-fluid rounded" alt="Responsive image rounded" style="width:100px;">
-<h6 class="card-title"><small>Profile name</small></h6>
+" class="img-fluid rounded" alt="Responsive image rounded" style="width:50px;">
+<small>name</small>
 </div>
-         </div>
        <!--current cart-->
    <div >
    	<span class="text-center" ><h6>My Cart</h6></span>
