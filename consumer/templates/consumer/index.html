@@ -1,50 +1,14 @@
-{% load static %}
+{% extends "consumer/base.html" %}
+{% load staticfiles %}
 
-<!doctype html>
-<html lang="en">
-<html>
-<head>
-	<meta charset="utf-8">
-	<link href="{% static 'consumer/css/css/bootstrap.min.css' %}" rel="stylesheet" >
-	<link href="{% static 'consumer/css/consumer_style.css' %}" rel="stylesheet" >
-	<link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
-	 <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>strade</title>
+{% comment %}   title   {% endcomment %}}
+{% block title %}Consumer{% endblock title %}
 
-</head>
+{% block style %}<link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/style/consumer.css' %}"/> {% endblock style %}
 
-<!--Nav div-->
-<nav id="nav" class="navbar p-0   navbar-expand-lg m-0 fixed-top " style="background-color: #365899;height: 48px;">
-	<div class="container">
-      <div class="d-none d-lg-block navbar-brand m-0 logo">	
-      	</div>
+{% block blog %}active{% endblock blog %}
 
-   <!-- search item in this shop-->
-     <form class="form-inline searchF" style="margin-top:30px; ">
-        <input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success my-2 my-sm-0 p-0 m-0" type="submit" style="height: 25px;font-size: 14px;text-align: center;">Search</button>
-  </form> 
-   <!--left of nav-bar-->
-   <div class="collapse navbar-collapse justify-content-end" id="main-navbar" style="width: 250px;height: 50px;">
-    <ul class="navbar-nav" >
-      <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
-      </li>
-    </ul>
-    </div>
-    </div>
-
-</nav>
-
-<body class="" style="padding-top:50px">
+{% block content %}
     
     <div class="p-0 m-0">
     	<div class="wall row  no-gutters">
@@ -334,5 +298,4 @@
 </div>
    </div>
     </div>
-</body>
-</html>
+    {% endblock content %}

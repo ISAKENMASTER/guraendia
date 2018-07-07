@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock title %}strade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/css/bootstrap.min.css'%}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/consumer_style.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'blog/style/base.css' %}"/>
+    {% block style %}{% endblock style %}
+ <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet' />
+</head>
+
+ <!--Nav div-->
+<nav id="nav" class="navbar p-0   navbar-expand-lg m-0 fixed-top " style="background-color: #365899;height: 42px;">
+  <div class="container">
+      <div class="d-none d-lg-block navbar-brand m-0 logo"> 
+        </div>
+
+   <!-- search item in this shop-->
+     <form class="form-inline searchF" style="margin-top:30px; ">
+        <input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0 p-0 m-0" type="submit" style="height: 25px;font-size: 14px;text-align: center;">Search</button>
+  </form> 
+   <!--left of nav-bar-->
+   <div class="collapse navbar-collapse justify-content-end" id="main-navbar" style="width: 250px;height: 50px;">
+    <ul class="navbar-nav" >
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+    </ul>
+    </div>
+    </div>
+
+</nav>
+<body class="" style="padding-top:43px">
+
+        {% block content %}
+          
+        {% endblock content %}
+</body>
+
+ 
+         <script src="{% static 'blog/scripts/jquery.js' %}"></script>
+         <script src="{% static 'blog/scripts/jquery-ui.js' %}"></script>
+         <script src="{% static 'blog/scripts/bootstrap.min.js' %}"></script>
+         <script src="{% static 'blog/scripts/blog.js' %}"></script>
+ </html>
