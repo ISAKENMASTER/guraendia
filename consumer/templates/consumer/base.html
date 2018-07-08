@@ -4,29 +4,33 @@
     {% load staticfiles %}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% block title %}{% endblock title %}strade</title>
+    <title>{% block title %}{% endblock title %}Strade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/css/bootstrap.min.css'%}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/bootstrap.min.css'%}"/>
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/consumer_style.css' %}" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'blog/style/base.css' %}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/base.css' %}"/>
     {% block style %}{% endblock style %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'consumer/images/favicon.ico' %}" />
  <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet' />
 </head>
 
  <!--Nav div-->
-<nav id="nav" class="navbar p-0   navbar-expand-lg m-0 fixed-top " style="background-color: #365899;height: 42px;">
+<nav id="navbar" class="navbar p-0   navbar-expand-lg m-0 fixed-top " style="background-color: #365899;height: 42px;">
   <div class="container">
-      <div class="d-none d-lg-block navbar-brand m-0 logo"> 
-        </div>
+     <a href="#"> <div class="d-none d-lg-block navbar-brand m-0 logo" style="background-image: url('https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg');"> 
+        </div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
    <!-- search item in this shop-->
-     <form class="form-inline searchF" style="margin-top:30px; ">
-        <input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success my-2 my-sm-0 p-0 m-0" type="submit" style="height: 25px;font-size: 14px;text-align: center;">Search</button>
+     <form class="form-inline searchF" style="margin-top:30px;background-color:white">
+        <input class="search form-control mr-sm-2" type="search" placeholder="Search items here..." aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0 p-0 m-0 srchBtn" type="submit">Search</button>
   </form> 
    <!--left of nav-bar-->
    <div class="collapse navbar-collapse justify-content-end" id="main-navbar" style="width: 250px;height: 50px;">
-    <ul class="navbar-nav" >
+    <ul class="navbar-nav nav" >
       <li class="nav-item">
         <a class="nav-link" href="#">Register</a>
       </li>
@@ -48,9 +52,6 @@
         {% endblock content %}
 </body>
 
- 
-         <script src="{% static 'blog/scripts/jquery.js' %}"></script>
-         <script src="{% static 'blog/scripts/jquery-ui.js' %}"></script>
-         <script src="{% static 'blog/scripts/bootstrap.min.js' %}"></script>
-         <script src="{% static 'blog/scripts/blog.js' %}"></script>
+         <script src="{% static 'consumer/scripts/bootstrap.min.js' %}"></script>
+         <script src="{% static 'consumer/scripts/base.js' %}"></script>
  </html>

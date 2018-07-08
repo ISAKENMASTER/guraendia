@@ -1,12 +1,7 @@
 {% extends "consumer/base.html" %}
 {% load staticfiles %}
 
-{% comment %}   title   {% endcomment %}}
-{% block title %}Consumer{% endblock title %}
-
-{% block style %}<link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/style/consumer.css' %}"/> {% endblock style %}
-
-{% block blog %}active{% endblock blog %}
+{% block style %}<link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/consumer_index.css' %}"/> {% endblock style %}
 
 {% block content %}
     
@@ -28,12 +23,13 @@
     <small>SELL TO RETAILERS</small></a>
      <a class="card" style="margin-bottom: 7px" href='#' >
     <h6>DISTRIBUTER</h6>
-    <small>SELL TO WHOLESALERS</small></a>
-    <a class="Card"  style="margin-bottom: 7px" href='#'>
+    <small>SELL TO WHOLESALERS</small>
+     </a>
+    <a class="card"  style="margin-bottom: 7px" href='#'>
     <h6>MANUFACTURER</h6>
     <small>SELL TO DISTRIBUTERS</small></a>
-    <a class="Card" href='#'>
-    <h6 >PRODUCER</h6>
+    <a class="card" href='#'>
+    <h6>PRODUCER</h6>
     <small>SELL TO MANUFACTURER</small></a>
   </div>
     
@@ -53,8 +49,8 @@
       <div id="shop-item" style="background-color: #fafafa">
       	<!--upper image,shopname and location-->
         <div>
-          <h6><img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
-" class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
+          <h6><img src="{% static 'consumer/images/profholder.jpeg' %}" 
+          	class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
 <small class="text-muted">Shop location</small></h6>
         </div>
         <!--Buying space-->
@@ -62,7 +58,7 @@
         	<!--image left-->
         	<div class="col">
         <div>
-        <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
         </div>
     </div>
         <!--right Buy sell sbuttons-->
@@ -84,8 +80,8 @@
       <div class="" id="shop-item" style="background-color: #fafafa">
       	<!--upper image,shopname and location-->
         <div>
-          <h6><img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
-" class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
+          <h6><img src="{% static 'consumer/images/profholder.jpeg' %}"
+          	class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
 <small class="text-muted">Shop location</small></h6>
         </div>
         <!--Buying space-->
@@ -93,7 +89,7 @@
         	<!--image left-->
         	<div class="col">
         <div>
-        <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
         </div>
     </div>
         <!--right Buy sell sbuttons-->
@@ -115,8 +111,8 @@
       <div id="shop-item" style="background-color: #fafafa">
       	<!--upper image,shopname and location-->
         <div>
-          <h6><img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
-" class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
+          <h6><img src="{% static 'consumer/images/profholder.jpeg' %}"
+          	class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
 <small class="text-muted">Shop location</small></h6>
         </div>
         <!--Buying space-->
@@ -124,7 +120,7 @@
         	<!--image left-->
         	<div class="col">
         <div>
-        <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
         </div>
     </div>
         <!--right Buy sell sbuttons-->
@@ -145,8 +141,7 @@
       <div id="shop-item" style="background-color: #fafafa">
       	<!--upper image,shopname and location-->
         <div>
-          <h6><img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
-" class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
+          <h6><img src="{% static 'consumer/images/profholder.jpeg' %}" class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
 <small class="text-muted">Shop location</small></h6>
         </div>
         <!--Buying space-->
@@ -154,7 +149,7 @@
         	<!--image left-->
         	<div class="col">
         <div>
-        <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
         </div>
     </div>
         <!--right Buy sell sbuttons-->
@@ -188,8 +183,7 @@
     	<div class="card-group">
     	<!--profile pic-->    	 
     		<div class="text-center" style="width: 50px">
-           <img src="https://pbs.twimg.com/profile_images/3693270948/cb89095e1d403d8cfaf750faba2e683b_400x400.jpeg
-" class="img-fluid rounded" alt="Responsive image rounded" style="width:50px;">
+           <img src="{% static 'consumer/images/profholder.jpeg' %}"          class="img-fluid rounded" alt="Responsive image rounded" style="width:50px;">
 <small>name</small>
 </div>
        <!--current cart-->
@@ -260,15 +254,15 @@
 	<div class="card-group">
   <div class="card">
   	<small class="text-center">item <small>price</small></small>
-    <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+    <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
   </div>
   <div class="card">
   	<small class="text-center">item <small>price</small></small>
-    <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+    <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
   </div>
   <div class="card">
   	<small class="text-center">item <small>price</small></small>
-    <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+    <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
   </div>
 </div>
 </div>
@@ -279,15 +273,15 @@
 	<div class="card-group">
   <div class="card">
   	<small class="text-center" >item <small>price</small></small>
-    <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+    <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
   </div>
   <div class="card">
   	<small class="text-center">item <small>price</small></small>
-    <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+    <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
   </div>
   <div class="card">
   	<small class="text-center">item <small>price</small></small>
-    <img class="card-img-bottom" src="http://www.climbingvenezuela.com/sites/default/files/styles/bigwig_940x460/public/bigwig/ascenso_pico_naiguata_02_0.jpg?itok=mAq5kzme" alt="Card image cap">
+    <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="Card image cap">
   </div>
 </div>
 </div>
