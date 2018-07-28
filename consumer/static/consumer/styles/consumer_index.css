@@ -67,31 +67,34 @@
 .wrapper {
   width: 100%;
   position: relative;
-  background: #efefef;
   overflow: hidden;
+  margin-left:2px;
+  border-radius: 5px; 
 }
-
 .left {
   float: left;
+  border-radius: 0px 0px 10px;
+  margin-bottom: 3px;
 }
 
 .tContainer {
   overflow-y: scroll;
-  height: 299px;
-  border-top: 41px solid transparent;
+  height: 282px;
+  border-top: 35px solid transparent;
   border-bottom: 41px solid transparent;
 }
 
 td + td {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #efefef;;
 }
 
 td, th {
-  padding: 5px 4px 5px 10px;
+  padding: 5px 4px 5px 5px;
 
 }
 td{
 	font: normal normal 19px Arial;
+	border-bottom: 1px solid #efefef;;
 }
 
 thead tr th,
@@ -102,15 +105,15 @@ tfoot tr td {
 thead tr th div,
 tfoot tr td div {
   position: absolute;
-  color: #fff;
+  color: #000;
   padding: 15px;
-  margin-left: -19px;
+  margin-left: -10px;
   line-height: normal;
   width: 100%;
   text-align: left;
   font-size: 15.9px;
   font-weight: bold;
-  background: #365899;
+  background: #4267b2;
 }
 thead tr th div {
   top: 0;
@@ -118,4 +121,20 @@ thead tr th div {
 
 tfoot tr td div {
   bottom:0;
+}
+.tHeaders{
+  font: bold normal 18px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  margin: 0
+   }
+
+#puchHist{
+  max-height:270px; 
+  width:100%;
+  overflow:hidden;
+  overflow-y:scroll; 
+}
+.headers{
+  font: bold normal 18px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color:#f6f7f9;
 }
