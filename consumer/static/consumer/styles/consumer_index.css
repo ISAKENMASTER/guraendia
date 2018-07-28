@@ -63,3 +63,59 @@
 .img-thumbnail{
 	height: 140px;
 }
+/*tabel*/
+.wrapper {
+  width: 100%;
+  position: relative;
+  background: #efefef;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.tContainer {
+  overflow-y: scroll;
+  height: 299px;
+  border-top: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+}
+
+td + td {
+  border-left: 1px solid #fff;
+}
+
+td, th {
+  padding: 5px 4px 5px 10px;
+
+}
+td{
+	font: normal normal 19px Arial;
+}
+
+thead tr th,
+tfoot tr td {
+  line-height: 0;
+}
+
+thead tr th div,
+tfoot tr td div {
+  position: absolute;
+  color: #fff;
+  padding: 15px;
+  margin-left: -19px;
+  line-height: normal;
+  width: 100%;
+  text-align: left;
+  font-size: 15.9px;
+  font-weight: bold;
+  background: #365899;
+}
+thead tr th div {
+  top: 0;
+}
+
+tfoot tr td div {
+  bottom:0;
+}
