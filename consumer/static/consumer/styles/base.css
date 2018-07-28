@@ -1,0 +1,103 @@
+body {
+  background-color:#e9ebee;
+  font-family: 'Abhaya Libre';
+  font-size: 22px;
+}
+a{
+  color: #365899;
+}
+ #navbar{
+ }
+ .search {
+  height: 25px;
+  font-size: 14px;
+  padding-left:5px;
+  border: 0px;
+  padding-right: 3px;
+  margin-left:2px; 
+}
+.searchF{
+margin-left:250px; 
+margin-bottom:25px;
+}
+.srchBtn{
+  height: 26px;
+  
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -2px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30px;
+    position:absolute; 
+    top: 3px;
+}
+@media screen and (max-width: 700px){
+  #main-navbar {
+      clear: both;
+  }
+  .search {
+  width: 20px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius:0px;
+  
+  font-size: 10px;
+  padding-left: 5px;
+  border: 0px;
+
+}
+
+.srchBtn{
+  height: 20px;
+  
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.searchF{
+  background-color: red;
+  margin-right: 100px;
+  margin-left:11px;
+  height: 10px;
+  margin-bottom:20px; 
+}
+.logo {
+  background-image: url('https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -2px;
+    height: 30%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30%;
+    position:absolute; 
+    top: 3px;
+}
+@media screen and ( max-width: 1077px){
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and ( max-width: 750px){
+    #main-image {
+        width: 100%;
+    }
+}

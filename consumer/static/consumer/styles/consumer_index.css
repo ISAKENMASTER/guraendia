@@ -105,7 +105,7 @@ tfoot tr td {
 thead tr th div,
 tfoot tr td div {
   position: absolute;
-  color: #000;
+  color: #fff;
   padding: 15px;
   margin-left: -10px;
   line-height: normal;
@@ -135,6 +135,11 @@ tfoot tr td div {
 }
 .headers{
   font: bold normal 18px Verdana, Geneva, Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin:0;
   background-color:#f6f7f9;
+}
+#next-shop{
+	background-color: #ffffff;
+	border-radius:10px;
+	height: 200px
 }
