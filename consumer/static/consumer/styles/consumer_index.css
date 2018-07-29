@@ -5,7 +5,6 @@
   background-color: #ffffff;
   border-radius: 5px
 }
-
 @media (max-width: 300px) {
   .carosel-item {
     width: 100%;
@@ -78,13 +77,13 @@
 }
 
 .tContainer {
-  overflow-y: scroll;
+  overflow-y: hidden;
   height: 282px;
   border-top: 35px solid transparent;
   border-bottom: 41px solid transparent;
 }
 
-td + td {
+td{
   border-left: 1px solid #efefef;;
 }
 
@@ -106,12 +105,11 @@ thead tr th div,
 tfoot tr td div {
   position: absolute;
   color: #fff;
-  padding: 15px;
+  padding: 17px;
   margin-left: -10px;
   line-height: normal;
   width: 100%;
   text-align: left;
-  font-size: 15.9px;
   font-weight: bold;
   background: #4267b2;
 }
@@ -123,23 +121,23 @@ tfoot tr td div {
   bottom:0;
 }
 .tHeaders{
-  font: bold normal 18px Verdana, Geneva, Arial, Helvetica, sans-serif;
-  margin: 0
+  font: bold normal 15px Arial;
+  margin: 0;
    }
 
 #puchHist{
   max-height:270px; 
   width:100%;
   overflow:hidden;
-  overflow-y:scroll; 
+  overflow-y:hidden; 
+  margin-top: 10px;
+
 }
 .headers{
-  font: bold normal 18px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font: bold normal 20px Verdana, Geneva, Arial, Helvetica, sans-serif;
   margin:0;
   background-color:#f6f7f9;
 }
-#next-shop{
-	background-color: #ffffff;
-	border-radius:10px;
-	height: 200px
+tbody.scrollContent td, tbody.scrollContent tr.normalRow td {
+	font-size: 16px;
 }
