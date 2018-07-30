@@ -141,3 +141,24 @@ tfoot tr td div {
 tbody.scrollContent td, tbody.scrollContent tr.normalRow td {
 	font-size: 16px;
 }
+.paySec li{
+  margin-bottom: 3px;
+  font-size:15px; 
+}
+.paySec li button{
+	padding-left: 3pt;
+	font-size:12px;
+}
+.centered {
+	color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.itemDesc li{
+   margin-bottom:0px;  
+}
+.itemDesc li small{
+  font-size:20px;
+}

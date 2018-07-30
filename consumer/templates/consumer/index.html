@@ -46,18 +46,17 @@
 
 
     		<!--Center block -->
-    		<div class="col-md-4 container d-block center clearfix wall " style="padding-top:3px">
+    		<div class="col-md-4 d-block center clearfix wall " style="padding-top:3px">
               
 
     	<!--Scrollable shop items-->
-    <div>
+    <div id="sPace">
       <!--shop item-->
-      <div id="shop-item" style="background-color: #fafafa;margin-bottom:11px">
+      <div id="sI" style="background-color: #fafafa;margin-bottom:15px">
       	<!--upper image,shopname and location-->
-        <div>
-          <h6><img src="{% static 'consumer/images/profholder.jpeg' %}" 
-          	class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
-<small class="text-muted">Shop location</small></h6>
+          <div style="margin-bottom:5px;border-radius:5px">
+          <img src="{% static 'consumer/images/profholder.jpeg' %}" 
+          	class="img-fluid rounded" alt="Responsive image rounded" style="width:10%;"> <small>SHOPNAME<small>(ShopLocation)</small></small>
         </div>
         <!--Buying space-->
         <div class="row">
@@ -67,10 +66,11 @@
         <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
         <div class="centered">item</div>
         </div>
-        <div style="margin-top:5px">
-        <small style="font-size: 15px;text-decoration:underline;">ITEM</small>
+       <div>
+        <input style="font-size:15px;color:" type="button" class="btn itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
         <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
-          <li><small>Availability:</small><small> yes</small></li>
           <li><small>Size:</small><small> 17 inch</small></li>
           <li><small>Brand:</small><small> sony</small></li>
           <li><small>Quality:</small><small> yes</small></li>
@@ -79,23 +79,27 @@
         </div>
         </div>
         <!--right Buy sell sbuttons-->
-        <div class="col-md-4 paySec" style="padding-left: 0pt;">
+        <div class="col-md-4 paySec container" style="padding-left: 0pt;margin-right: 10px;">
         <ul style="list-style-type: none;padding-left: 0pt;">
-        	<li><button  style="background-color: #39b54a;color: #ffff" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
-        	<li><button style="background-color: #ff0000;color: #ffffff;" type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
+          <li><small>ITEMNAME</small></li>
+          <li><small>Available:</small><small>20</small><li>
+          <li><small>PRICE:</small><small>200 ksh</small></li>
+        	<li><button  style="background-color: #39b54a;color: #ffff;" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
+        	<li><button style="background-color: #ff0000;color: #ffffff; " type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
         	<li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
         </ul>
     </div>
         </div>
       </div>
 
   <!--shop item-->
-      <div id="shop-item" style="background-color: #fafafa;margin-bottom:11px">
+      <div  style="background-color: #fafafa;margin-bottom:11px">
         <!--upper image,shopname and location-->
-        <div>
+          <div style="">
           <h6><img src="{% static 'consumer/images/profholder.jpeg' %}" 
-            class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
-<small class="text-muted">Shop location</small></h6>
+            class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME<small>(ShopLocation)</small><small> ITEMNAME</small> @200ksh.</h6>
         </div>
         <!--Buying space-->
         <div class="row">
@@ -105,10 +109,11 @@
         <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
         <div class="centered">item</div>
         </div>
-        <div style="margin-top:20px">
-        <small style="font-size: 15px;text-decoration:underline;">ITEM</small>
+       <div>
+        <input type="button" class="btn itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
         <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
-          <li><small>Availability:</small><small> yes</small></li>
           <li><small>Size:</small><small> 17 inch</small></li>
           <li><small>Brand:</small><small> sony</small></li>
           <li><small>Quality:</small><small> yes</small></li>
@@ -119,9 +124,12 @@
         <!--right Buy sell sbuttons-->
         <div class="col-md-4 paySec" style="padding-left: 0pt;">
         <ul style="list-style-type: none;padding-left: 0pt;">
+          <li style="padding:0"><small>Available:</small><small>20</small><li>
           <li><button  style="background-color: #39b54a;color: #ffff" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
           <li><button style="background-color: #ff0000;color: #ffffff;" type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
           <li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
         </ul>
     </div>
         </div>
@@ -130,10 +138,9 @@
       <!--shop item-->
       <div id="shop-item" style="background-color: #fafafa;margin-bottom:11px">
         <!--upper image,shopname and location-->
-        <div>
+          <div style="">
           <h6><img src="{% static 'consumer/images/profholder.jpeg' %}" 
-            class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
-<small class="text-muted">Shop location</small></h6>
+            class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME<small>(ShopLocation)</small><small> ITEMNAME</small> @200ksh.</h6>
         </div>
         <!--Buying space-->
         <div class="row">
@@ -143,10 +150,11 @@
         <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
         <div class="centered">item</div>
         </div>
-        <div style="margin-top:10px">
-        <small style="font-size: 15px;text-decoration:underline;">ITEM</small>
+       <div>
+        <input type="button"  class="btn btn-info itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
         <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
-          <li><small>Availability:</small><small> yes</small></li>
           <li><small>Size:</small><small> 17 inch</small></li>
           <li><small>Brand:</small><small> sony</small></li>
           <li><small>Quality:</small><small> yes</small></li>
@@ -157,9 +165,12 @@
         <!--right Buy sell sbuttons-->
         <div class="col-md-4 paySec" style="padding-left: 0pt;">
         <ul style="list-style-type: none;padding-left: 0pt;">
+          <li style="padding:0"><small>Available:</small><small>20</small><li>
           <li><button  style="background-color: #39b54a;color: #ffff" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
           <li><button style="background-color: #ff0000;color: #ffffff;" type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
           <li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
         </ul>
     </div>
         </div>
@@ -167,10 +178,9 @@
       <!--shop item-->
      <div id="shop-item" style="background-color: #fafafa;margin-bottom:11px">
         <!--upper image,shopname and location-->
-        <div>
+          <div style="">
           <h6><img src="{% static 'consumer/images/profholder.jpeg' %}" 
-            class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME
-<small class="text-muted">Shop location</small></h6>
+            class="img-fluid rounded" alt="Responsive image rounded" style="width:40px;"> SHOPNAME<small>(ShopLocation)</small><small> ITEMNAME</small> @200ksh.</h6>
         </div>
         <!--Buying space-->
         <div class="row">
@@ -180,10 +190,11 @@
         <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
         <div class="centered">item</div>
         </div>
-        <div style="margin-top:20px">
-        <small style="font-size: 15px;text-decoration:underline;">ITEM</small>
+       <div>
+        <input type="button" class="btn btn-info itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
         <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
-          <li><small>Availability:</small><small> yes</small></li>
           <li><small>Size:</small><small> 17 inch</small></li>
           <li><small>Brand:</small><small> sony</small></li>
           <li><small>Quality:</small><small> yes</small></li>
@@ -194,9 +205,12 @@
         <!--right Buy sell sbuttons-->
         <div class="col-md-4 paySec" style="padding-left: 0pt;">
         <ul style="list-style-type: none;padding-left: 0pt;">
+          <li style="padding:0"><small>Available:</small><small>20</small><li>
           <li><button  style="background-color: #39b54a;color: #ffff" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
           <li><button style="background-color: #ff0000;color: #ffffff;" type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
           <li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
         </ul>
     </div>
         </div>
@@ -219,7 +233,7 @@
      	<div style="height:301px;margin: 0 auto;">
        <!--current cart-->
   <div class="left" style="background-color: #ffffff;">
-   <h4 class="text-center headers">MY CART</h4>
+   <h4 class="text-center headers">MY CART  <i class="fa fa-shopping-cart" style="font-size:20px;color:purple"></i></h4>
     
     <div class="wrapper">
   <div class="tContainer">
